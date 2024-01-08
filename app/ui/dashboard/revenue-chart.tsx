@@ -13,6 +13,7 @@ import { fetchRevenue } from "@/app/lib/data";
 export default async function RevenueChart() {
   // Make component async, remove the props
   const revenue = await fetchRevenue();
+  // console.log(revenue[0].month);
   const chartHeight = 350;
   // NOTE: comment in this code when you get to this point in the course
 
